@@ -29,7 +29,7 @@ COPY . /app
 # Required argument.
 ARG CCAP
 
-RUN cd /app && \
+RUN cd /app/src && \
   make \
   CXX=/usr/bin/g++-7 \
   CUDA=/usr/local/cuda \
